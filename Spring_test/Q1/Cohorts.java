@@ -1,15 +1,23 @@
 package com;
 
 public class Cohorts {
-	public Cohorts() {
-		super();
-		System.out.println("Inside cohort class");
-		// TODO Auto-generated constructor stub
-	}
 	private int CohortId;
 	private String CohortName;
 	private String emailId;
 	private long contactNo;
+	public Cohorts(int CohortId,String CohortName,String emailId,long contactNo) {
+		super();
+		System.out.println("Inside cohort class");
+		this.CohortId=CohortId;
+		this.CohortName=CohortName;
+		this.emailId=emailId;
+		this.contactNo=contactNo;
+		
+		// TODO Auto-generated constructor stub
+	}
+	void show(){  
+	    System.out.println(CohortId +" "+CohortName+" "+emailId+" "+contactNo);  
+	}  
 	
 	public int getCohortId() {
 		return CohortId;
